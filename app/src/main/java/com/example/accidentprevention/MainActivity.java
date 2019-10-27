@@ -40,40 +40,42 @@ public class MainActivity extends AppCompatActivity {
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-             String email=emailtxt.getText().toString().trim();
-             String password=passwordtext.getText().toString().trim();
-             if(TextUtils.isEmpty(email)){
-                 Toast.makeText(MainActivity.this, "Please enter Email",
-                         Toast.LENGTH_SHORT).show();
-                 return;
-             }
-
-             if(TextUtils.isEmpty(password)){
-                 Toast.makeText(MainActivity.this, "Please enter password",
-                         Toast.LENGTH_SHORT).show();
-             return;
-             }
-                if(password.length()<6){
-                    Toast.makeText(MainActivity.this,"Password too short",Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                mAuth.signInWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
                                     startActivity(new Intent(getApplicationContext(),Dashboard.class));
-                                } else {
-                                    // If sign in fails, display a message to the user.
-                                    Toast.makeText(MainActivity.this, "Authentication failed.",
-                                            Toast.LENGTH_SHORT).show();
 
-                                }
-
-                                // ...
-                            }
-                        });
+                //             String email=emailtxt.getText().toString().trim();
+//             String password=passwordtext.getText().toString().trim();
+//             if(TextUtils.isEmpty(email)){
+//                 Toast.makeText(MainActivity.this, "Please enter Email",
+//                         Toast.LENGTH_SHORT).show();
+//                 return;
+//             }
+//
+//             if(TextUtils.isEmpty(password)){
+//                 Toast.makeText(MainActivity.this, "Please enter password",
+//                         Toast.LENGTH_SHORT).show();
+//             return;
+//             }
+//                if(password.length()<6){
+//                    Toast.makeText(MainActivity.this,"Password too short",Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
+//
+//                mAuth.signInWithEmailAndPassword(email, password)
+//                        .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
+//                            @Override
+//                            public void onComplete(@NonNull Task<AuthResult> task) {
+//                                if (task.isSuccessful()) {
+//                                    startActivity(new Intent(getApplicationContext(),Dashboard.class));
+//                                } else {
+//                                    // If sign in fails, display a message to the user.
+//                                    Toast.makeText(MainActivity.this, "Authentication failed.",
+//                                            Toast.LENGTH_SHORT).show();
+//
+//                                }
+//
+//                                // ...
+//                            }
+//                        });
             }
         });
        }
