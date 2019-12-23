@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "19994636965",
+    "firebase_url": "https://accident-prevention.firebaseio.com",
+    "project_id": "accident-prevention",
+    "storage_bucket": "accident-prevention.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19994636965:android:d658c791120385f899934c",
+        "android_client_info": {
+          "package_name": "com.example.accidentprevention"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19994636965-d8fv0fd7pm7b3t2s32umlls70pfe8d7n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.accidentprevention",
+            "certificate_hash": "531fb10cec0e83056994b8fe8b17b2e047af568a"
+          }
+        },
+        {
+          "client_id": "19994636965-kifo4htftpdichjhkoo6h01cs1q0n449.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKqc3rMKEhjjqjBzO3ZC-eIqZMhH6Xqfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19994636965-kifo4htftpdichjhkoo6h01cs1q0n449.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
